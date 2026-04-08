@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rank #1 on Google — Free SEO Masterclass | IDS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Barlow+Condensed:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--red:#e01f1f;--red-dark:#b01010;--red-glow:rgba(224,31,31,.35);--gold:#f5c518;--bg:#0a0505;--bg2:#110808;--bg3:#160909;--white:#fff;--grey:#b8a8a8;--light:#f5f0f0}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Barlow',sans-serif;background:var(--bg);color:var(--white);overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:1000;opacity:.4}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(10,5,5,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(224,31,31,.18);display:flex;align-items:center;justify-content:space-between;padding:12px 24px}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:2px}
+.nav-logo span{color:var(--red)}
+.nav-cta{background:var(--red);color:#fff;border:none;padding:8px 20px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);transition:background .2s;text-decoration:none;display:inline-block}
+.nav-cta:hover{background:var(--red-dark)}
+
+/* TICKER */
+.fomo-ticker{background:var(--red);padding:8px 0;overflow:hidden;margin-top:57px;position:relative;z-index:10}
+.ticker-track{display:flex;gap:60px;animation:ticker 24s linear infinite;white-space:nowrap;width:max-content}
+.ticker-track span{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase}
+.ticker-track span::before{content:'★  '}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* HERO */
+.hero{min-height:100vh;background:radial-gradient(ellipse 80% 60% at 60% 40%,rgba(224,31,31,.18) 0%,transparent 60%),radial-gradient(ellipse 50% 80% at 10% 80%,rgba(224,31,31,.1) 0%,transparent 50%),linear-gradient(180deg,#0a0505 0%,#110808 100%);display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;padding:80px 60px 60px;position:relative;overflow:hidden}
+.hero::after{content:'#1';position:absolute;font-family:'Bebas Neue',sans-serif;font-size:clamp(200px,35vw,500px);color:rgba(224,31,31,.04);right:-60px;top:50%;transform:translateY(-50%);pointer-events:none;line-height:1;user-select:none}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,197,24,.12);border:1px solid rgba(245,197,24,.4);color:var(--gold);padding:6px 14px;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;border-radius:2px;animation:fadeDown .6s ease both}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(44px,7.5vw,98px);line-height:.92;letter-spacing:1px;margin-bottom:18px;animation:fadeUp .7s .1s ease both}
+.hero-title .accent{color:var(--red);text-shadow:0 0 50px var(--red-glow)}
+.hero-title .outline{-webkit-text-stroke:2px var(--red);color:transparent}
+.hero-title .free-tag{font-size:.36em;background:var(--gold);color:#000;padding:2px 10px;vertical-align:middle;display:inline-block;margin-left:8px;border-radius:2px;letter-spacing:2px;font-style:normal}
+.hero-sub{font-size:clamp(15px,2.2vw,20px);color:var(--grey);font-style:italic;margin-bottom:24px;line-height:1.5;animation:fadeUp .7s .2s ease both;max-width:520px}
+.hero-sub strong{color:#fff;font-style:normal}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px;animation:fadeUp .7s .3s ease both}
+.hero-meta-pill{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);padding:7px 14px;font-size:13px;font-weight:600;border-radius:2px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;animation:fadeUp .7s .4s ease both}
+.btn-primary{background:var(--red);color:#fff;padding:16px 34px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:17px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;clip-path:polygon(12px 0%,100% 0%,calc(100% - 12px) 100%,0% 100%);display:inline-flex;align-items:center;gap:8px;box-shadow:0 0 30px var(--red-glow);transition:all .2s;position:relative;overflow:hidden}
+.btn-primary::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);transform:translateX(-100%);transition:transform .5s}
+.btn-primary:hover::after{transform:translateX(100%)}
+.btn-primary:hover{background:var(--red-dark);transform:translateY(-2px)}
+.btn-secondary{background:transparent;color:#fff;padding:16px 28px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;letter-spacing:1px;text-transform:uppercase;text-decoration:none;border:1.5px solid rgba(255,255,255,.3);cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
+.btn-secondary:hover{border-color:var(--red);color:var(--red)}
+
+/* FORM */
+.hero-right{display:flex;flex-direction:column;align-items:center;position:relative;animation:fadeLeft .8s .2s ease both}
+.registration-card{background:rgba(255,255,255,.04);border:1px solid rgba(224,31,31,.3);padding:32px 28px;width:100%;max-width:420px;position:relative;backdrop-filter:blur(8px)}
+.registration-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),var(--gold),var(--red))}
+.card-title{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:900;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;text-align:center}
+.card-subtitle{font-size:13px;color:var(--grey);text-align:center;margin-bottom:20px}
+.card-subtitle strong{color:var(--gold)}
+.form-group{margin-bottom:13px}
+.form-group label{display:block;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--grey);margin-bottom:5px}
+.form-group input,.form-group select{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#fff;padding:12px 14px;font-family:'Barlow',sans-serif;font-size:15px;outline:none;transition:border .2s;border-radius:2px;appearance:none}
+.form-group input::placeholder{color:rgba(255,255,255,.3)}
+.form-group input:focus,.form-group select:focus{border-color:var(--red)}
+.form-group select option{background:#1a0a0a}
+.form-submit{width:100%;background:var(--red);color:#fff;border:none;padding:15px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:18px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:background .2s;box-shadow:0 4px 24px var(--red-glow);border-radius:2px;margin-top:4px}
+.form-submit:hover{background:var(--red-dark)}
+.form-trust{font-size:11px;color:var(--grey);text-align:center;margin-top:10px}
+.form-trust span{color:var(--gold)}
+.seats-bar{margin-top:16px;padding:14px 18px;background:rgba(245,197,24,.07);border:1px solid rgba(245,197,24,.25);border-radius:2px}
+.seats-label{display:flex;justify-content:space-between;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.seats-progress{height:6px;background:rgba(255,255,255,.08);border-radius:3px;overflow:hidden}
+.seats-fill{height:100%;width:82%;background:linear-gradient(90deg,var(--red),var(--gold));border-radius:3px;animation:fillBar 1.5s .5s ease both}
+@keyframes fillBar{from{width:0}to{width:82%}}
+
+/* STATS */
+.stats-strip{background:var(--red);padding:18px 40px;display:flex;justify-content:center;gap:clamp(20px,5vw,80px);flex-wrap:wrap}
+.stat-item{text-align:center}
+.stat-num{font-family:'Bebas Neue',sans-serif;font-size:36px;line-height:1}
+.stat-label{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;opacity:.85}
+
+/* SHARED SECTION */
+.full-section{padding:80px 40px}
+section{padding:80px 40px;max-width:1100px;margin:0 auto}
+.inner{max-width:1100px;margin:0 auto}
+.section-tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:10px}
+.section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,6vw,62px);line-height:1;margin-bottom:14px}
+.section-title em{color:var(--red);font-style:normal}
+.section-body{color:var(--grey);font-size:16px;line-height:1.7;max-width:580px;margin-bottom:44px}
+
+/* LEARN */
+.learn-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.learn-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);padding:24px 22px;position:relative;transition:all .25s;cursor:default}
+.learn-card:hover{border-color:var(--red);background:rgba(224,31,31,.05);transform:translateY(-3px)}
+.learn-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:0;background:var(--red);transition:height .3s}
+.learn-card:hover::before{height:100%}
+.learn-icon{font-size:28px;margin-bottom:12px}
+.learn-card h3{font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:900;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.learn-card p{font-size:14px;color:var(--grey);line-height:1.6}
+
+/* SCOPE */
+.scope-section{background:var(--bg2);padding:80px 40px}
+.scope-inner{max-width:1100px;margin:0 auto}
+.scope-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-bottom:56px}
+.scope-card{position:relative;padding:30px 26px;border:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.02);overflow:hidden;transition:transform .25s,border-color .25s}
+.scope-card:hover{transform:translateY(-4px);border-color:rgba(224,31,31,.4)}
+.scope-card-bg{position:absolute;top:-20px;right:-20px;font-size:90px;opacity:.06;pointer-events:none}
+.scope-card h3{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:900;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+.scope-card p{font-size:14px;color:var(--grey);line-height:1.7}
+.scope-card .hl{color:var(--gold);font-weight:700}
+.salary-table-wrap{overflow-x:auto}
+.salary-table{width:100%;border-collapse:collapse;font-size:14px}
+.salary-table th{background:var(--red);padding:14px 18px;text-align:left;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:900;text-transform:uppercase;letter-spacing:1px}
+.salary-table td{padding:13px 18px;border-bottom:1px solid rgba(255,255,255,.07);color:var(--grey)}
+.salary-table tr:hover td{background:rgba(224,31,31,.05);color:#fff}
+.salary-num{color:var(--gold);font-weight:700;font-size:15px}
+.role-name{color:#fff;font-weight:600}
+.demand-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:2px;background:rgba(255,255,255,.05);margin-top:48px}
+.demand-box{background:var(--bg2);padding:26px 20px;text-align:center}
+.demand-num{font-family:'Bebas Neue',sans-serif;font-size:42px;color:var(--red);line-height:1;margin-bottom:4px}
+.demand-label{font-size:11px;color:var(--grey);letter-spacing:1px;text-transform:uppercase}
+
+/* TRAINER */
+.trainer-section{background:var(--bg3);padding:80px 40px}
+.trainer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1.6fr;gap:60px;align-items:center}
+.trainer-img-box{background:linear-gradient(135deg,var(--red-dark),#3a0808);aspect-ratio:3/4;max-height:460px;display:flex;align-items:flex-end;justify-content:center;overflow:hidden;position:relative}
+.trainer-placeholder{font-family:'Bebas Neue',sans-serif;font-size:120px;color:rgba(255,255,255,.12);line-height:1;padding-bottom:20px}
+.trainer-tag{position:absolute;bottom:20px;left:-16px;background:var(--red);padding:10px 18px;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:14px;letter-spacing:1px;text-transform:uppercase;box-shadow:4px 4px 0 rgba(0,0,0,.4)}
+.trainer-info h2{font-family:'Bebas Neue',sans-serif;font-size:54px;line-height:1;margin-bottom:4px}
+.trainer-role{color:var(--red);font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px}
+.trainer-bio{color:var(--grey);font-size:15px;line-height:1.8;margin-bottom:28px}
+.trainer-stats{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:28px}
+.t-stat{text-align:center;padding:14px 18px;background:rgba(224,31,31,.08);border:1px solid rgba(224,31,31,.2);flex:1;min-width:80px}
+.t-stat-num{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--red);line-height:1}
+.t-stat-label{font-size:11px;color:var(--grey);margin-top:2px;letter-spacing:1px}
+
+/* WHY */
+.why-section{background:var(--bg2);padding:80px 40px}
+.why-inner{max-width:1100px;margin:0 auto}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2px;background:rgba(255,255,255,.05)}
+.why-item{background:var(--bg2);padding:32px 28px;display:flex;gap:18px;align-items:flex-start;transition:background .2s}
+.why-item:hover{background:rgba(224,31,31,.06)}
+.why-num{font-family:'Bebas Neue',sans-serif;font-size:48px;color:rgba(224,31,31,.2);line-height:1;flex-shrink:0}
+.why-text h4{font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:900;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+.why-text p{font-size:14px;color:var(--grey);line-height:1.6}
+
+/* FOMO */
+.fomo-section{background:var(--red);padding:50px 40px;text-align:center;position:relative;overflow:hidden}
+.fomo-section::before{content:'⚠';position:absolute;font-size:400px;opacity:.04;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
+.fomo-section h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(30px,6vw,62px);line-height:1;margin-bottom:14px;position:relative}
+.fomo-section p{font-size:16px;opacity:.92;max-width:580px;margin:0 auto 28px;position:relative}
+.countdown{display:flex;gap:16px;justify-content:center;margin-bottom:28px;flex-wrap:wrap;position:relative}
+.count-box{background:rgba(0,0,0,.3);padding:14px 18px;min-width:72px;text-align:center}
+.count-num{font-family:'Bebas Neue',sans-serif;font-size:44px;line-height:1;display:block}
+.count-label{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;opacity:.7}
+.spots-alert{display:inline-flex;align-items:center;gap:8px;background:rgba(0,0,0,.25);padding:10px 20px;font-weight:700;font-size:14px;letter-spacing:1px}
+.pulse-dot{width:10px;height:10px;background:var(--gold);border-radius:50%;animation:pulse 1.2s infinite}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.6);opacity:.5}}
+
+/* CASE STUDIES */
+.case-section{background:var(--bg);padding:80px 40px}
+.case-inner{max-width:1100px;margin:0 auto}
+.case-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.case-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);overflow:hidden;transition:border-color .25s,transform .25s}
+.case-card:hover{border-color:var(--red);transform:translateY(-4px)}
+.case-img-slot{width:100%;aspect-ratio:16/10;background:rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.07);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;position:relative;overflow:hidden;cursor:pointer}
+.case-img-slot img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;display:none}
+.case-img-slot.loaded img{display:block}
+.case-img-slot.loaded .upload-hint,.case-img-slot.loaded .upload-icon{display:none}
+.case-img-slot input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;z-index:3}
+.upload-icon{font-size:36px;opacity:.35;z-index:1}
+.upload-hint{text-align:center;z-index:1;padding:0 16px}
+.upload-hint strong{display:block;color:var(--red);font-size:13px;font-family:'Barlow Condensed',sans-serif;font-weight:900;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.upload-hint span{font-size:11px;color:var(--grey);letter-spacing:.5px}
+.case-result-bar{background:var(--red);padding:8px 18px;display:flex;gap:20px;flex-wrap:wrap}
+.case-result-pill{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:14px;letter-spacing:1px;display:flex;align-items:center;gap:5px}
+.case-result-pill .arr{color:var(--gold)}
+.case-body{padding:20px 22px}
+.case-body h4{font-family:'Barlow Condensed',sans-serif;font-size:19px;font-weight:900;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+.case-body p{font-size:13px;color:var(--grey);line-height:1.6}
+.case-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.case-tag{background:rgba(224,31,31,.1);border:1px solid rgba(224,31,31,.2);color:var(--red);font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 8px;border-radius:2px}
+.case-add-note{font-size:11px;color:rgba(255,255,255,.25);text-align:center;margin-top:36px;letter-spacing:.5px}
+
+/* REVIEWS */
+.reviews-section{background:var(--bg3);padding:80px 40px}
+.reviews-inner{max-width:1100px;margin:0 auto}
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.review-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);padding:26px 22px;position:relative;transition:border-color .25s,transform .25s}
+.review-card:hover{border-color:rgba(224,31,31,.35);transform:translateY(-3px)}
+.review-quote{position:absolute;top:12px;left:16px;font-family:'Bebas Neue',sans-serif;font-size:70px;color:var(--red);opacity:.35;line-height:1;pointer-events:none}
+.review-stars{color:var(--gold);font-size:13px;margin-bottom:12px;padding-top:28px}
+.review-text{font-size:14px;line-height:1.75;color:var(--light);margin-bottom:18px}
+.review-author{display:flex;align-items:center;gap:12px}
+.review-avatar{width:44px;height:44px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:18px;flex-shrink:0}
+.review-name{font-weight:700;font-size:14px;color:#fff}
+.review-role{font-size:12px;color:var(--grey);margin-top:2px}
+.review-badge{font-size:11px;color:rgba(100,220,130,.8);margin-top:3px;font-weight:700;letter-spacing:.5px}
+.video-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:10px;margin-top:36px;scrollbar-width:thin;scrollbar-color:var(--red) transparent}
+.video-pill{flex-shrink:0;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);padding:14px 18px;display:flex;align-items:center;gap:12px;min-width:200px;cursor:pointer;transition:border-color .2s}
+.video-pill:hover{border-color:var(--red)}
+.video-play{width:36px;height:36px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:13px}
+.video-info .vname{font-weight:700;font-size:13px}
+.video-info .vrole{font-size:12px;color:var(--grey)}
+
+/* FAQ */
+.faq-section{background:var(--bg2);padding:80px 40px}
+.faq-inner{max-width:800px;margin:0 auto}
+.faq-item{border-bottom:1px solid rgba(255,255,255,.08)}
+.faq-q{padding:20px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;gap:16px;transition:color .2s;user-select:none}
+.faq-q:hover{color:var(--red)}
+.faq-icon{width:28px;height:28px;background:rgba(224,31,31,.15);border:1px solid rgba(224,31,31,.3);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px;color:var(--red);transition:all .3s}
+.faq-item.open .faq-icon{transform:rotate(45deg);background:var(--red);color:#fff}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s}
+.faq-item.open .faq-a{max-height:300px;padding-bottom:18px}
+.faq-a p{color:var(--grey);font-size:15px;line-height:1.7}
+
+/* FINAL CTA */
+.final-cta{background:radial-gradient(ellipse 70% 70% at 50% 50%,rgba(224,31,31,.2) 0%,transparent 70%),var(--bg);padding:100px 40px;text-align:center}
+.final-cta h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(38px,7vw,78px);line-height:1;margin-bottom:16px}
+.final-cta>p{color:var(--grey);font-size:17px;max-width:500px;margin:0 auto 36px}
+.price-display{display:inline-flex;align-items:center;gap:16px;margin-bottom:32px;flex-wrap:wrap;justify-content:center}
+.price-old{font-family:'Barlow Condensed',sans-serif;font-size:28px;color:var(--grey);text-decoration:line-through;opacity:.6}
+.price-new{font-family:'Bebas Neue',sans-serif;font-size:56px;color:var(--gold);line-height:1}
+.price-badge{background:var(--red);color:#fff;padding:6px 14px;font-weight:900;font-size:13px;letter-spacing:1px;text-transform:uppercase;align-self:center}
+footer{background:#050202;border-top:1px solid rgba(255,255,255,.06);padding:28px 40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+footer p{font-size:13px;color:var(--grey)}
+footer a{color:var(--red);text-decoration:none}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeLeft{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:translateX(0)}}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding:30px 20px 50px;gap:44px}.hero::after{display:none}.trainer-inner{grid-template-columns:1fr}.trainer-img-box{display:none}}
+@media(max-width:640px){nav{padding:10px 16px}.nav-logo{font-size:15px}.full-section,.scope-section,.trainer-section,.why-section,.fomo-section,.case-section,.reviews-section,.faq-section,.final-cta{padding:56px 18px}section{padding:56px 18px}.stats-strip{padding:14px 16px;gap:18px}.stat-num{font-size:26px}.registration-card{padding:22px 16px}.salary-table th,.salary-table td{padding:10px 12px;font-size:12px}footer{padding:22px 18px;flex-direction:column;text-align:center}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo"><span>I</span>DS · Institute of Digital Studies</div>
+  <a href="#register" class="nav-cta">Reserve Free Seat →</a>
+</nav>
+
+<div class="fomo-ticker">
+  <div class="ticker-track">
+    <span>Free SEO Masterclass — 11th April</span><span>Only 18 Seats Left — Closing Fast</span><span>Certificate of Completion Included</span><span>11 AM – 1 PM · Google Meet</span><span>₹0 Registration — Zero Hidden Charges</span><span>Trainer: Jitender Singh · SEO Expert</span><span>Free SEO Masterclass — 11th April</span><span>Only 18 Seats Left — Closing Fast</span><span>Certificate of Completion Included</span><span>11 AM – 1 PM · Google Meet</span><span>₹0 Registration — Zero Hidden Charges</span><span>Trainer: Jitender Singh · SEO Expert</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-left">
+    <div class="hero-badge">🔥 One-Time Live Event · April 11th Only</div>
+    <h1 class="hero-title">
+      Master SEO.<br>
+      <span class="accent">Get Found.</span><br>
+      <span class="outline">Get Hired.</span><span class="free-tag">FREE</span>
+    </h1>
+    <p class="hero-sub"><strong>A 2-hour live masterclass</strong> where you'll learn Advanced SEO from scratch — the skills that get websites ranked, get marketers hired, and get careers moving. Certification included.</p>
+    <div class="hero-meta">
+      <div class="hero-meta-pill">📅 11th April 2025</div>
+      <div class="hero-meta-pill">⏰ 11:00 AM – 1:00 PM</div>
+      <div class="hero-meta-pill">🎥 Google Meet</div>
+      <div class="hero-meta-pill">🏅 Certificate Included</div>
+    </div>
+    <div class="hero-actions">
+      <a href="#register" class="btn-primary">🚀 Claim My Free Seat</a>
+      <a href="#scope" class="btn-secondary">Why SEO Matters ↓</a>
+    </div>
+  </div>
+  <div class="hero-right" id="register">
+    <div class="registration-card">
+      <div class="card-title">Reserve Your Seat Now</div>
+      <div class="card-subtitle">Join <strong>500+ learners</strong> already registered</div>
+      <!-- netlify attribute enables Netlify Forms; hidden input is required -->
+      <form name="webinar-registrations" method="POST" data-netlify="true" id="regForm">
+        <input type="hidden" name="form-name" value="webinar-registrations" />
+        <div class="form-group"><label>Full Name</label><input type="text" name="name" id="fieldName" placeholder="Enter your full name" required /></div>
+        <div class="form-group"><label>WhatsApp Number</label><input type="tel" name="phone" id="fieldPhone" placeholder="+91 00000 00000" required /></div>
+        <div class="form-group"><label>Email Address</label><input type="email" name="email" id="fieldEmail" placeholder="your@email.com" required /></div>
+        <div class="form-group">
+          <label>Your Current Role</label>
+          <select name="role" id="fieldRole" required>
+            <option value="" disabled selected>Select your role</option>
+            <option>Student</option>
+            <option>Working Professional</option>
+            <option>Business Owner</option>
+            <option>Freelancer</option>
+            <option>Job Seeker</option>
+          </select>
+        </div>
+        <button type="submit" class="form-submit" id="submitBtn">Register for FREE &rarr;</button>
+      </form>
+      <p class="form-trust">&#128274; No spam. Your data is safe. <span>Pinky promise.</span></p>
+      <div class="seats-bar">
+        <div class="seats-label"><span>&#128293; Seats Filling Fast</span><span>82% Full</span></div>
+        <div class="seats-progress"><div class="seats-fill"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stat-item"><div class="stat-num">500+</div><div class="stat-label">Already Registered</div></div>
+  <div class="stat-item"><div class="stat-num">2 Hrs</div><div class="stat-label">Packed Session</div></div>
+  <div class="stat-item"><div class="stat-num">₹0</div><div class="stat-label">Registration Fee</div></div>
+  <div class="stat-item"><div class="stat-num">10+</div><div class="stat-label">Live Strategies</div></div>
+  <div class="stat-item"><div class="stat-num">1</div><div class="stat-label">Certificate Included</div></div>
+</div>
+
+<!-- SEO SCOPE -->
+<div class="scope-section" id="scope">
+  <div class="scope-inner">
+    <div class="section-tag">The SEO Opportunity in 2025</div>
+    <h2 class="section-title">SEO Is The <em>Hottest</em><br>Skill of The Decade</h2>
+    <p class="section-body">93% of online experiences begin with a search engine. Businesses are desperate for people who can get them found on Google. That person could be YOU — after this masterclass.</p>
+    <div class="scope-grid reveal">
+      <div class="scope-card"><div class="scope-card-bg">📈</div><h3>Explosive Market Demand</h3><p>The global SEO industry is worth <span class="hl">$122 Billion+ in 2025</span> and growing 17% annually. Indian businesses alone spend ₹8,000+ crore on SEO — and they're struggling to find skilled talent.</p></div>
+      <div class="scope-card"><div class="scope-card-bg">💼</div><h3>Jobs Are Everywhere</h3><p>LinkedIn India lists <span class="hl">85,000+ active SEO job openings</span> at any given time. From startups to MNCs — everyone needs SEO. Freshers land ₹3–5 LPA with zero experience after the right training.</p></div>
+      <div class="scope-card"><div class="scope-card-bg">🌐</div><h3>Freelancing Gold Mine</h3><p>Freelance SEO consultants in India charge <span class="hl">₹15,000–₹80,000 per client/month.</span> With just 3–5 clients you can earn more than most salaried jobs — from home, on your own schedule.</p></div>
+      <div class="scope-card"><div class="scope-card-bg">🏢</div><h3>Business Owners Win Big</h3><p>Page 1 of Google gets <span class="hl">91% of all clicks.</span> SEO delivers 5x better ROI than paid ads. Mastering it means cutting ₹50,000+/month in ad spend and owning your traffic permanently.</p></div>
+      <div class="scope-card"><div class="scope-card-bg">🤖</div><h3>AI Makes SEO More Valuable</h3><p>Despite AI, Google still depends on human-optimized signals. <span class="hl">SEO professionals who use AI tools earn 2x more.</span> This masterclass covers modern AI-powered SEO workflows.</p></div>
+      <div class="scope-card"><div class="scope-card-bg">🚀</div><h3>Fast Learning-to-Earning Curve</h3><p>Unlike coding, SEO has a <span class="hl">rapid income curve.</span> IDS students have landed their first client or job within 30–60 days of learning these exact strategies. This session is your starting pistol.</p></div>
+    </div>
+    <div class="section-tag" style="margin-top:0">Earning Potential</div>
+    <h2 class="section-title" style="margin-bottom:28px">What SEO Professionals <em>Earn</em> in India</h2>
+    <div class="salary-table-wrap reveal">
+      <table class="salary-table">
+        <thead><tr><th>Role</th><th>Experience</th><th>Avg. Annual Salary</th><th>Freelance / Month</th></tr></thead>
+        <tbody>
+          <tr><td class="role-name">SEO Executive</td><td>0–1 Year (Fresher)</td><td class="salary-num">₹2.5 – ₹4.5 LPA</td><td class="salary-num">₹15,000 – ₹25,000</td></tr>
+          <tr><td class="role-name">SEO Analyst</td><td>1–3 Years</td><td class="salary-num">₹4.5 – ₹7 LPA</td><td class="salary-num">₹25,000 – ₹50,000</td></tr>
+          <tr><td class="role-name">SEO Manager</td><td>3–5 Years</td><td class="salary-num">₹7 – ₹14 LPA</td><td class="salary-num">₹50,000 – ₹1,20,000</td></tr>
+          <tr><td class="role-name">SEO Consultant</td><td>5+ Years</td><td class="salary-num">₹14 – ₹25 LPA</td><td class="salary-num">₹1,00,000 – ₹3,00,000</td></tr>
+          <tr><td class="role-name">Digital Marketing Head</td><td>7+ Years</td><td class="salary-num">₹20 – ₹40 LPA</td><td class="salary-num">Unlimited (Agency)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="demand-row reveal">
+      <div class="demand-box"><div class="demand-num">93%</div><div class="demand-label">Online journeys start on Google</div></div>
+      <div class="demand-box"><div class="demand-num">85K+</div><div class="demand-label">Active SEO jobs on LinkedIn India</div></div>
+      <div class="demand-box"><div class="demand-num">$122B</div><div class="demand-label">Global SEO industry value 2025</div></div>
+      <div class="demand-box"><div class="demand-num">5x</div><div class="demand-label">Better ROI vs paid advertising</div></div>
+      <div class="demand-box"><div class="demand-num">91%</div><div class="demand-label">Clicks go to Page 1 results only</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT YOU LEARN -->
+<section id="learn">
+  <div class="section-tag">Curriculum Overview</div>
+  <h2 class="section-title">What You'll <em>Master</em> in 2 Hours</h2>
+  <p class="section-body">Live, practical, zero fluff. Every topic is something you can apply to your website or client's business the very next day.</p>
+  <div class="learn-grid reveal">
+    <div class="learn-card"><div class="learn-icon">🔍</div><h3>SEO Fundamentals</h3><p>How search engines crawl, index and rank pages — the essential foundation every digital marketer must master first.</p></div>
+    <div class="learn-card"><div class="learn-icon">🔑</div><h3>Keyword Research</h3><p>Find high-volume, low-competition keywords using tools like Google Keyword Planner, Ubersuggest, and Ahrefs — for free.</p></div>
+    <div class="learn-card"><div class="learn-icon">📄</div><h3>On-Page SEO</h3><p>Optimize titles, meta descriptions, headings, image tags, and URL structures to rank higher without spending a rupee on ads.</p></div>
+    <div class="learn-card"><div class="learn-icon">🔗</div><h3>Off-Page & Backlinks</h3><p>Build authority through ethical link-building, guest posting, and DA improvements that Google genuinely trusts.</p></div>
+    <div class="learn-card"><div class="learn-icon">⚡</div><h3>Technical SEO</h3><p>Fix crawl errors, boost site speed, improve Core Web Vitals and mobile UX to leapfrog competitors overnight.</p></div>
+    <div class="learn-card"><div class="learn-icon">📊</div><h3>SEO Analytics</h3><p>Track rankings, traffic, and conversions using Google Search Console and Analytics like a data-driven pro.</p></div>
+  </div>
+</section>
+
+<!-- FOMO -->
+<div class="fomo-section">
+  <h2>⚠️ Registrations Close in...</h2>
+  <p>This is a ONE-TIME live event. No replay. No second chance. Every minute you wait is a seat someone else is claiming.</p>
+  <div class="countdown" id="countdown">
+    <div class="count-box"><span class="count-num" id="cd-days">04</span><span class="count-label">Days</span></div>
+    <div class="count-box"><span class="count-num" id="cd-hours">11</span><span class="count-label">Hours</span></div>
+    <div class="count-box"><span class="count-num" id="cd-mins">28</span><span class="count-label">Minutes</span></div>
+    <div class="count-box"><span class="count-num" id="cd-secs">44</span><span class="count-label">Seconds</span></div>
+  </div>
+  <div class="spots-alert"><div class="pulse-dot"></div>Only <strong>&nbsp;18 Seats&nbsp;</strong> Remaining Out of 500</div>
+  <br><br>
+  <a href="#register" class="btn-primary" style="text-decoration:none;display:inline-flex">🔥 Secure My Seat Before It's Gone</a>
+</div>
+
+<!-- CASE STUDIES -->
+<div class="case-section">
+  <div class="case-inner">
+    <div class="section-tag">Real Results · Proof It Works</div>
+    <h2 class="section-title">Case Studies That <em>Speak</em><br>for Themselves</h2>
+    <p class="section-body">These are real businesses and real websites that applied the exact SEO strategies taught in this masterclass. The numbers don't lie.</p>
+    <div class="case-grid reveal">
+
+      <div class="case-card">
+        <div class="case-img-slot" id="slot1">
+          <input type="file" accept="image/*" onchange="previewCase(this,'slot1')">
+          <span class="upload-icon">📸</span>
+          <div class="upload-hint"><strong>Upload Screenshot Here</strong><span>GSC / Ahrefs / Analytics proof</span></div>
+          <img src="" alt="">
+        </div>
+        <div class="case-result-bar">
+          <div class="case-result-pill"><span class="arr">↑</span> Page 1 in 45 Days</div>
+          <div class="case-result-pill"><span class="arr">↑</span> +320% Organic Traffic</div>
+        </div>
+        <div class="case-body">
+          <h4>E-commerce Store · Delhi NCR</h4>
+          <p>A fashion brand went from zero organic traffic to 12,000+ monthly visitors in under 2 months using on-page SEO and targeted keyword clustering — zero ad spend.</p>
+          <div class="case-tags"><span class="case-tag">On-Page SEO</span><span class="case-tag">Keywords</span><span class="case-tag">E-commerce</span></div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-img-slot" id="slot2">
+          <input type="file" accept="image/*" onchange="previewCase(this,'slot2')">
+          <span class="upload-icon">📸</span>
+          <div class="upload-hint"><strong>Upload Screenshot Here</strong><span>GSC / Ahrefs / Analytics proof</span></div>
+          <img src="" alt="">
+        </div>
+        <div class="case-result-bar">
+          <div class="case-result-pill"><span class="arr">↑</span> ₹60K/mo Ads Saved</div>
+          <div class="case-result-pill"><span class="arr">↑</span> 5x Lead Growth</div>
+        </div>
+        <div class="case-body">
+          <h4>Real Estate Agency · Noida</h4>
+          <p>By fixing technical SEO and building local backlinks, this firm replaced ₹60,000/month in Google Ads with free organic leads — entirely within 60 days.</p>
+          <div class="case-tags"><span class="case-tag">Local SEO</span><span class="case-tag">Backlinks</span><span class="case-tag">Lead Gen</span></div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-img-slot" id="slot3">
+          <input type="file" accept="image/*" onchange="previewCase(this,'slot3')">
+          <span class="upload-icon">📸</span>
+          <div class="upload-hint"><strong>Upload Screenshot Here</strong><span>GSC / Ahrefs / Analytics proof</span></div>
+          <img src="" alt="">
+        </div>
+        <div class="case-result-bar">
+          <div class="case-result-pill"><span class="arr">↑</span> #1 Ranking · 40+ Keywords</div>
+          <div class="case-result-pill"><span class="arr">↑</span> 8x Revenue</div>
+        </div>
+        <div class="case-body">
+          <h4>EdTech Startup · Bengaluru</h4>
+          <p>An education startup ranked #1 for 40+ competitive keywords in 3 months using content clusters and technical SEO — resulting in 8x more course enrollments.</p>
+          <div class="case-tags"><span class="case-tag">Content SEO</span><span class="case-tag">Technical SEO</span><span class="case-tag">EdTech</span></div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-img-slot" id="slot4">
+          <input type="file" accept="image/*" onchange="previewCase(this,'slot4')">
+          <span class="upload-icon">➕</span>
+          <div class="upload-hint"><strong>Add Your Case Study</strong><span>Click to upload your result screenshot</span></div>
+          <img src="" alt="">
+        </div>
+        <div class="case-result-bar">
+          <div class="case-result-pill"><span class="arr">↑</span> Your Results Here</div>
+        </div>
+        <div class="case-body">
+          <h4>Your Success Story</h4>
+          <p>Upload a Google Search Console, Ahrefs, or Analytics screenshot to showcase your real campaign data. Click the image area above to add it.</p>
+          <div class="case-tags"><span class="case-tag">Add Screenshot</span><span class="case-tag">Your Niche</span></div>
+        </div>
+      </div>
+
+    </div>
+    <p class="case-add-note">💡 To add screenshots: click any image slot above and upload a PNG/JPG from your device. Images are displayed locally and not stored anywhere.</p>
+  </div>
+</div>
+
+<!-- TRAINER -->
+<div class="trainer-section">
+  <div class="trainer-inner">
+    <div><div class="trainer-img-box"><div class="trainer-placeholder">JS</div><div class="trainer-tag">Digital Marketing Trainer</div></div></div>
+    <div class="trainer-info reveal">
+      <div class="section-tag">Your Instructor</div>
+      <h2>Jitender<br>Singh</h2>
+      <p class="trainer-role">Digital Marketing Trainer · IDS</p>
+      <p class="trainer-bio">Jitender Singh is a hands-on digital marketing professional who has run successful SEO campaigns for businesses across e-commerce, real estate, education, and healthcare. As lead trainer at the Institute of Digital Studies, Noida, he breaks down complex SEO into immediately actionable steps — no jargon, no fluff. 500+ students have landed their first SEO job or client under his guidance.</p>
+      <div class="trainer-stats">
+        <div class="t-stat"><div class="t-stat-num">500+</div><div class="t-stat-label">Students Trained</div></div>
+        <div class="t-stat"><div class="t-stat-num">5+</div><div class="t-stat-label">Years Experience</div></div>
+        <div class="t-stat"><div class="t-stat-num">30+</div><div class="t-stat-label">Certifications</div></div>
+        <div class="t-stat"><div class="t-stat-num">100%</div><div class="t-stat-label">Practical Focus</div></div>
+      </div>
+      <a href="tel:09315471293" class="btn-primary">📞 Call: 09315471293</a>
+    </div>
+  </div>
+</div>
+
+<!-- WHY ENROLL -->
+<div class="why-section">
+  <div class="why-inner">
+    <div class="section-tag">Why Attend?</div>
+    <h2 class="section-title">6 Reasons You <em>Can't</em> Skip This</h2>
+    <div class="why-grid reveal">
+      <div class="why-item"><div class="why-num">01</div><div class="why-text"><h4>Expert Insights from Industry Leaders</h4><p>Learn from someone actively running real campaigns — not theory from outdated textbooks or recycled YouTube content.</p></div></div>
+      <div class="why-item"><div class="why-num">02</div><div class="why-text"><h4>Certificate of Completion</h4><p>Add a verified IDS certificate to your LinkedIn and resume. Recruiters and clients notice credentials backed by real training.</p></div></div>
+      <div class="why-item"><div class="why-num">03</div><div class="why-text"><h4>Practical Strategies That Work</h4><p>Every tactic is tested on real websites. You'll leave with a personalised action plan you can implement the very next day.</p></div></div>
+      <div class="why-item"><div class="why-num">04</div><div class="why-text"><h4>Live Q&A — Direct Trainer Access</h4><p>Ask Jitender directly about your website, niche, or career. Get personalised guidance that paid consultants charge thousands for.</p></div></div>
+      <div class="why-item"><div class="why-num">05</div><div class="why-text"><h4>₹5,000+ Value — Absolutely Free</h4><p>Zero registration, zero upsell, zero catches. This is IDS's way of giving back to India's growing digital marketing community.</p></div></div>
+      <div class="why-item"><div class="why-num">06</div><div class="why-text"><h4>Career & Business Growth Guaranteed</h4><p>Whether you're a student, professional, or entrepreneur — SEO skills from this session will directly and measurably impact your income.</p></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<div class="reviews-section">
+  <div class="reviews-inner">
+    <div class="section-tag">Student Reviews</div>
+    <h2 class="section-title" style="margin-bottom:10px">Real People. <em>Real Results.</em></h2>
+    <p class="section-body" style="margin-bottom:44px">Hear from past IDS webinar attendees who applied what they learned and transformed their careers and businesses.</p>
+    <div class="reviews-grid reveal">
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Within 3 weeks of applying what Jitender taught, my client's website jumped from Page 5 to Position 2 on Google. I've attended paid SEO courses that didn't give me this much practical value. Absolutely incredible for a free class!</p>
+        <div class="review-author"><div class="review-avatar">RP</div><div><div class="review-name">Rahul Patel</div><div class="review-role">Freelance SEO Consultant, Delhi</div><div class="review-badge">✅ Verified Attendee</div></div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">I was a total beginner — didn't even know what a meta tag was. By the end of the session I had a full SEO audit of my site done! The live Q&A was a game-changer. Got the certificate the same day. Highly recommended for everyone!</p>
+        <div class="review-author"><div class="review-avatar">SK</div><div><div class="review-name">Sneha Kapoor</div><div class="review-role">E-commerce Business Owner, Noida</div><div class="review-badge">✅ Verified Attendee</div></div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Best free webinar I've ever attended. No fluff — pure actionable SEO. Got the certificate, added it to LinkedIn, and landed a job interview the following week. IDS delivers real value without charging a single rupee.</p>
+        <div class="review-author"><div class="review-avatar">AM</div><div><div class="review-name">Aarav Mehta</div><div class="review-role">Digital Marketing Executive, Mumbai</div><div class="review-badge">✅ Verified Attendee</div></div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">As a business owner with no marketing background, SEO always felt overwhelming. Jitender made it so simple and practical. I stopped spending ₹40K/month on Google Ads after implementing just 3 of his on-page techniques. The ROI is insane.</p>
+        <div class="review-author"><div class="review-avatar">VR</div><div><div class="review-name">Vikram Rathore</div><div class="review-role">Restaurant Owner, Gurugram</div><div class="review-badge">✅ Verified Attendee</div></div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">I had already taken a ₹15,000 SEO course elsewhere. Honestly, this free 2-hour session covered more ground and was far more practical. Jitender's examples were all current, real-world, and immediately usable. Worth every minute of my time.</p>
+        <div class="review-author"><div class="review-avatar">PD</div><div><div class="review-name">Priya Desai</div><div class="review-role">Content Marketer, Pune</div><div class="review-badge">✅ Verified Attendee</div></div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Landed my first freelance SEO client within 45 days of this masterclass. The keyword research section alone was worth 10x any paid course. I now charge ₹25,000/month per client. This webinar was literally my turning point. Thank you IDS!</p>
+        <div class="review-author"><div class="review-avatar">KS</div><div><div class="review-name">Karan Sharma</div><div class="review-role">Freelance SEO Specialist, Jaipur</div><div class="review-badge">✅ Verified Attendee</div></div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">I joined as a college student with zero knowledge. Now I'm interning at a digital agency thanks to the certificate and skills I gained. My seniors were surprised I understood technical SEO so well for a fresher. Jitender sir is an amazing teacher.</p>
+        <div class="review-author"><div class="review-avatar">NT</div><div><div class="review-name">Nidhi Trivedi</div><div class="review-role">Digital Marketing Intern, Lucknow</div><div class="review-badge">✅ Verified Attendee</div></div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Our startup website was invisible on Google. After this masterclass, we implemented the on-page and local SEO tips and got 3,000 extra monthly visitors organically within 6 weeks — completely free. Can't believe this is a zero-cost session!</p>
+        <div class="review-author"><div class="review-avatar">AB</div><div><div class="review-name">Arjun Bhatia</div><div class="review-role">Co-Founder, SaaS Startup, Hyderabad</div><div class="review-badge">✅ Verified Attendee</div></div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">The backlink strategy section changed everything for my agency. I used the exact outreach template Jitender shared and got 18 high-DA backlinks in one month. Client rankings shot up, renewals hit an all-time high. This is pure gold.</p>
+        <div class="review-author"><div class="review-avatar">MS</div><div><div class="review-name">Meera Singh</div><div class="review-role">Digital Agency Owner, Chennai</div><div class="review-badge">✅ Verified Attendee</div></div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Jitender's session on Core Web Vitals and site speed completely changed how I approach technical SEO. Our e-commerce client's bounce rate dropped by 40% and conversions went up 28% — all from changes made in one afternoon after the webinar.</p>
+        <div class="review-author"><div class="review-avatar">RG</div><div><div class="review-name">Riya Goswami</div><div class="review-role">SEO Executive, Kolkata</div><div class="review-badge">✅ Verified Attendee</div></div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">I run a coaching institute and had no idea my website wasn't even indexed properly. This masterclass helped me fix the basics in one day. Within a month, new students started finding us on Google without any ads. Absolutely priceless knowledge.</p>
+        <div class="review-author"><div class="review-avatar">SP</div><div><div class="review-name">Suresh Pandey</div><div class="review-role">Coaching Institute Owner, Kanpur</div><div class="review-badge">✅ Verified Attendee</div></div></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">I was skeptical — how good can a free webinar be? Answer: incredibly good. Jitender gives you a complete framework in 2 hours. I walked away with 12 specific tasks for my website. Completed 8 of them in a week. Rankings improved noticeably within 3 weeks.</p>
+        <div class="review-author"><div class="review-avatar">DA</div><div><div class="review-name">Danish Ahmed</div><div class="review-role">Blogger & Affiliate Marketer, Bangalore</div><div class="review-badge">✅ Verified Attendee</div></div></div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:44px">
+      <div class="section-tag">Video Testimonials</div>
+      <div class="video-row">
+        <div class="video-pill"><div class="video-play">▶</div><div class="video-info"><div class="vname">Rahul's Journey</div><div class="vrole">Page 1 in 3 Weeks</div></div></div>
+        <div class="video-pill"><div class="video-play">▶</div><div class="video-info"><div class="vname">Sneha's Story</div><div class="vrole">Zero to SEO Pro</div></div></div>
+        <div class="video-pill"><div class="video-play">▶</div><div class="video-info"><div class="vname">Vikram's Win</div><div class="vrole">Saved ₹40K/mo in Ads</div></div></div>
+        <div class="video-pill"><div class="video-play">▶</div><div class="video-info"><div class="vname">Karan's First Client</div><div class="vrole">₹25K/mo in 45 Days</div></div></div>
+        <div class="video-pill"><div class="video-play">▶</div><div class="video-info"><div class="vname">Meera's Agency</div><div class="vrole">18 Backlinks in 1 Month</div></div></div>
+      </div>
+      <p style="font-size:11px;color:rgba(255,255,255,.2);margin-top:10px;letter-spacing:.5px">🎥 Replace these with real YouTube or Vimeo embed links</p>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="faq-section">
+  <div class="faq-inner">
+    <div class="section-tag" style="text-align:center">Got Questions?</div>
+    <h2 class="section-title" style="text-align:center;margin-bottom:40px">Frequently Asked <em>Questions</em></h2>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is this masterclass really 100% free?<div class="faq-icon">+</div></div><div class="faq-a"><p>Yes, absolutely free with no hidden charges. The Institute of Digital Studies runs this as a community initiative. You'll receive full live access plus a certificate — zero cost, zero catches, zero upsells.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Who is this masterclass designed for?<div class="faq-icon">+</div></div><div class="faq-a"><p>Students, working professionals, business owners, freelancers, bloggers, and job seekers — anyone who wants to learn SEO from scratch or sharpen existing skills. No prior digital marketing knowledge required.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Will I receive a certificate after attending?<div class="faq-icon">+</div></div><div class="faq-a"><p>Yes! Every attendee who participates in the live session receives a Certificate of Webinar Completion from IDS. Download it and add it directly to your LinkedIn profile, resume, or portfolio.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How do I join the session on April 11th?<div class="faq-icon">+</div></div><div class="faq-a"><p>After registering, you'll receive a Google Meet link via WhatsApp and email before the event. Click the link at 11:00 AM on April 11th from any device — phone, laptop, or tablet.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Will there be a recording available?<div class="faq-icon">+</div></div><div class="faq-a"><p>This is an exclusive live-only session. A recording is not guaranteed. We strongly encourage attending live so you can participate in the Q&A, ask your questions, and claim your certificate.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">I'm a business owner — will this help my business?<div class="faq-icon">+</div></div><div class="faq-a"><p>Absolutely. You'll learn to rank your website on Google, generate free organic traffic, dominate local search, and reduce dependence on expensive paid ads — all in 2 focused hours.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is SEO still relevant with AI tools everywhere?<div class="faq-icon">+</div></div><div class="faq-a"><p>More relevant than ever. AI generates content, but SEO is what makes that content get found on Google. SEO professionals who use AI tools are among the highest earners in digital marketing — this session covers that directly.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can I ask questions during the session?<div class="faq-icon">+</div></div><div class="faq-a"><p>Yes! There's a dedicated live Q&A segment where Jitender Singh personally answers questions about SEO, your specific website, your industry, and career planning. Come prepared with your questions.</p></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How long will it take to see SEO results after this?<div class="faq-icon">+</div></div><div class="faq-a"><p>SEO results typically start showing within 30–90 days of implementation. Many IDS webinar attendees have seen ranking improvements in 2–4 weeks for low-competition keywords. Results depend on consistency of application.</p></div></div>
+  </div>
+</div>
+
+<!-- FINAL CTA -->
+<div class="final-cta">
+  <div class="section-tag">Last Chance — April 11th Only</div>
+  <h2>Your SEO Career<br>Starts <em>Right Here.</em></h2>
+  <p>Don't let another month pass watching your competitors outrank you. This is free. This is live. This is your moment.</p>
+  <div class="price-display">
+    <span class="price-old">₹5,000</span>
+    <span class="price-new">FREE</span>
+    <span class="price-badge">100% Off</span>
+  </div>
+  <br>
+  <a href="#register" class="btn-primary" style="text-decoration:none;font-size:18px;padding:18px 44px">🚀 Yes! I Want My Free Seat</a>
+  <br><br>
+  <p style="font-size:13px;opacity:.45">📞 Any questions? Call us: <a href="tel:09315471293" style="color:var(--red);text-decoration:none">09315471293</a></p>
+</div>
+
+<footer>
+  <p>© 2025 <a href="https://www.idigitalstudies.com" target="_blank">Institute of Digital Studies</a> · Noida, India</p>
+  <p>📞 <a href="tel:09315471293">09315471293</a> &nbsp;|&nbsp; <a href="https://www.idigitalstudies.com" target="_blank">idigitalstudies.com</a></p>
+</footer>
+
+<script>
+function updateCountdown(){
+  var target=new Date('2025-04-11T11:00:00');
+  var now=new Date();
+  var diff=target-now;
+  if(diff<=0){document.getElementById('countdown').innerHTML='<div style="font-family:Bebas Neue,sans-serif;font-size:32px;">LIVE NOW - Join on Google Meet!</div>';return;}
+  var d=Math.floor(diff/86400000),h=Math.floor((diff%86400000)/3600000),m=Math.floor((diff%3600000)/60000),s=Math.floor((diff%60000)/1000);
+  document.getElementById('cd-days').textContent=String(d).padStart(2,'0');
+  document.getElementById('cd-hours').textContent=String(h).padStart(2,'0');
+  document.getElementById('cd-mins').textContent=String(m).padStart(2,'0');
+  document.getElementById('cd-secs').textContent=String(s).padStart(2,'0');
+}
+updateCountdown();setInterval(updateCountdown,1000);
+
+function toggleFaq(el){
+  var item=el.closest('.faq-item'),isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(i){i.classList.remove('open');});
+  if(!isOpen)item.classList.add('open');
+}
+
+var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(function(r){obs.observe(r);});
+
+function previewCase(input,slotId){
+  var slot=document.getElementById(slotId);
+  var img=slot.querySelector('img');
+  if(input.files&&input.files[0]){
+    var reader=new FileReader();
+    reader.onload=function(e){img.src=e.target.result;slot.classList.add('loaded');};
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+// ---- GOOGLE SHEETS CONFIG ----
+// Paste your Apps Script Web App URL here:
+var GOOGLE_SHEET_URL = "YOUR_APPS_SCRIPT_WEB_APP_URL_HERE";
+// ------------------------------
+
+async function handleRegister(event) {
+  event.preventDefault(); // stop native form navigation
+
+  var btn   = document.getElementById('submitBtn');
+  var name  = document.getElementById('fieldName').value.trim();
+  var phone = document.getElementById('fieldPhone').value.trim();
+  var email = document.getElementById('fieldEmail').value.trim();
+  var role  = document.getElementById('fieldRole').value;
+
+  // Loading state
+  btn.disabled = true;
+  btn.textContent = 'Submitting...';
+
+  var payload = { name: name, phone: phone, email: email, role: role, timestamp: new Date().toISOString() };
+
+  // 1. Send to Netlify Forms (standard URL-encoded POST, works with Netlify)
+  var netlifyData = new URLSearchParams();
+  netlifyData.append('form-name', 'webinar-registrations');
+  netlifyData.append('name',  name);
+  netlifyData.append('phone', phone);
+  netlifyData.append('email', email);
+  netlifyData.append('role',  role);
+
+  try {
+    await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: netlifyData.toString()
+    });
+  } catch(e) {
+    console.warn('Netlify form post failed:', e);
+  }
+
+  // 2. Send to Google Sheets if URL is configured
+  if (GOOGLE_SHEET_URL && GOOGLE_SHEET_URL !== "https://script.google.com/macros/s/AKfycbzRJlOBxADIvb5ZMMdxvqsQ-24Xmwl5rrZY-OrQPSOchXICqfL9zKMAHzBuiV7vRP8/exec") {
+    try {
+      // Apps Script requires form-urlencoded for reliable no-cors POST
+      var sheetData = new URLSearchParams();
+      sheetData.append('name',      payload.name);
+      sheetData.append('phone',     payload.phone);
+      sheetData.append('email',     payload.email);
+      sheetData.append('role',      payload.role);
+      sheetData.append('timestamp', payload.timestamp);
+
+      await fetch(GOOGLE_SHEET_URL, {
+        method: 'POST',
+        mode:   'no-cors',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: sheetData.toString()
+      });
+    } catch(e) {
+      console.warn('Google Sheet sync failed:', e);
+    }
+  }
+
+  // Show success UI
+  btn.textContent = 'You are Registered!';
+  btn.style.background = '#27ae60';
+  document.getElementById('fieldName').value  = '';
+  document.getElementById('fieldPhone').value = '';
+  document.getElementById('fieldEmail').value = '';
+  document.getElementById('fieldRole').selectedIndex = 0;
+
+  var existing = document.getElementById('reg-success-banner');
+  if (existing) existing.remove();
+
+  var card = document.querySelector('.registration-card');
+  var banner = document.createElement('div');
+  banner.id = 'reg-success-banner';
+  banner.style.cssText = 'margin-top:14px;padding:14px;background:rgba(39,174,96,.15);border:1px solid rgba(39,174,96,.4);border-radius:2px;text-align:center;font-size:14px;color:#2ecc71;font-weight:700;letter-spacing:.5px';
+  banner.innerHTML = 'Registered! Check WhatsApp & email for the Google Meet link.<br><span style="font-weight:400;opacity:.8">See you on April 11th at 11 AM!</span>';
+  card.appendChild(banner);
+}
+
+/*
+=======================================================
+  GOOGLE SHEETS SETUP (one-time, ~5 minutes)
+=======================================================
+
+STEP 1: Create a Google Sheet with these headers in Row 1:
+  Timestamp | Name | Phone | Email | Role
+
+STEP 2: In the sheet, go to Extensions > Apps Script
+  Delete any existing code and paste this exactly:
+
+  function doPost(e) {
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    var params = e.parameter;
+    sheet.appendRow([
+      params.timestamp,
+      params.name,
+      params.phone,
+      params.email,
+      params.role
+    ]);
+    return ContentService.createTextOutput("OK");
+  }
+
+STEP 3: Click Deploy > New Deployment
+  - Type: Web App
+  - Execute as: Me
+  - Who has access: Anyone
+  Click Deploy. Authorize when prompted. Copy the Web App URL.
+
+STEP 4: Replace "YOUR_APPS_SCRIPT_WEB_APP_URL_HERE" above with your URL.
+
+=======================================================
+  NETLIFY SETUP
+=======================================================
+
+Just drag and drop this HTML file at netlify.com/drop.
+Netlify auto-detects the data-netlify="true" attribute.
+Leads appear under: Site > Forms > webinar-registrations
+
+NOTE: Netlify Forms only works when hosted on Netlify.
+      It will not capture submissions when testing locally.
+=======================================================
+*/
+</script></body>
+</html>
