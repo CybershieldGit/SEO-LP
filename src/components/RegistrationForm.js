@@ -81,8 +81,50 @@ export default function RegistrationForm() {
   };
 
   return (
-    <div className="registration-card" id="register">
-      <div className="card-title">Reserve Your Seat Now</div>
+    <div className="registration-card" id="register" style={{ position: 'relative' }}>
+      {/* Tilted High-Impact Banner (Transparent Clean Version) */}
+      <div style={{
+        position: 'absolute',
+        top: '-30px',
+        left: '50%',
+        transform: 'translateX(-50%) rotate(-1.5deg)',
+        width: '100%',
+        zIndex: 30,
+        textAlign: 'center'
+      }}>
+        <p style={{
+          fontFamily: 'var(--font-bebas-neue), sans-serif',
+          fontSize: '30px',
+          margin: 0,
+          color: 'white',
+          letterSpacing: '1.5px',
+          lineHeight: 1,
+          textShadow: '2px 2px 10px rgba(0,0,0,0.8)' // Adding shadow to ensure readability on background
+        }}>
+          🔥 FREE LIVE SEO MASTERCLASS ON SUNDAY
+        </p>
+        <div style={{
+          backgroundColor: '#000',
+          padding: '2px 10px',
+          borderRadius: '2px',
+          display: 'inline-block',
+          marginTop: '6px',
+          border: '1px solid #f5c518',
+          boxShadow: '0 4px 10px rgba(0,0,0,0.3)'
+        }}>
+          <p style={{
+            fontFamily: 'var(--font-barlow-condensed), sans-serif',
+            fontSize: 'clamp(10px, 1.5vw, 13px)',
+            fontWeight: '900',
+            color: '#f5c518',
+            margin: 0,
+            textTransform: 'uppercase'
+          }}>
+            Limited seats. Enroll now!
+          </p>
+        </div>
+      </div>
+      <div className="card-title" style={{ marginTop: '20px' }}>Reserve Your Seat Now</div>
       <div className="card-subtitle">
         Join <strong>500+ learners</strong> already registered
       </div>
@@ -194,7 +236,7 @@ export default function RegistrationForm() {
           Registered! Check WhatsApp & email for the Google Meet link.
           <br />
           <span style={{ fontWeight: "400", opacity: ".8" }}>
-            See you on April 11th at 11 AM!
+            See you on April 12th at 11 AM!
           </span>
         </div>
       )}

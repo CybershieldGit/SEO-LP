@@ -1,6 +1,6 @@
 export default function ScopeSection() {
   const scopeItems = [
-    { icon: "📈", title: "Explosive Market Demand", text: "The global SEO industry is worth $122 Billion+ in 2025 and growing 17% annually. Indian businesses alone spend ₹8,000+ crore on SEO — and they're struggling to find skilled talent." },
+    { icon: "📈", title: "Explosive Market Demand", text: "The global SEO industry is worth $122 Billion+ in 2026 and growing 17% annually. Indian businesses alone spend ₹8,000+ crore on SEO — and they're struggling to find skilled talent." },
     { icon: "💼", title: "Jobs Are Everywhere", text: "LinkedIn India lists 85,000+ active SEO job openings at any given time. From startups to MNCs — everyone needs SEO. Freshers land ₹3–5 LPA with zero experience after the right training." },
     { icon: "🌐", title: "Freelancing Gold Mine", text: "Freelance SEO consultants in India charge ₹15,000–₹80,000 per client/month. With just 3–5 clients you can earn more than most salaried jobs — from home, on your own schedule." },
     { icon: "🏢", title: "Business Owners Win Big", text: "Page 1 of Google gets 91% of all clicks. SEO delivers 5x better ROI than paid ads. Mastering it means cutting ₹50,000+/month in ad spend and owning your traffic permanently." },
@@ -19,7 +19,7 @@ export default function ScopeSection() {
   const demands = [
     { num: "93%", label: "Online journeys start on Google" },
     { num: "85K+", label: "Active SEO jobs on LinkedIn India" },
-    { num: "$122B", label: "Global SEO industry value 2025" },
+    { num: "$122B", label: "Global SEO industry value 2026" },
     { num: "5x", label: "Better ROI vs paid advertising" },
     { num: "91%", label: "Clicks go to Page 1 results only" },
   ];
@@ -27,7 +27,7 @@ export default function ScopeSection() {
   return (
     <div className="scope-section" id="scope">
       <div className="scope-inner">
-        <div className="section-tag">The SEO Opportunity in 2025</div>
+        <div className="section-tag">The SEO Opportunity in 2026</div>
         <h2 className="section-title">SEO Is The <em>Hottest</em><br />Skill of The Decade</h2>
         <p className="section-body">93% of online experiences begin with a search engine. Businesses are desperate for people who can get them found on Google. That person could be YOU — after this masterclass.</p>
 

@@ -5,7 +5,7 @@ export default function CountdownSection() {
   const [timeLeft, setTimeLeft] = useState({ days: "00", hours: "00", mins: "00", secs: "00", live: false });
 
   useEffect(() => {
-    const target = new Date('2025-04-11T11:00:00');
+    const target = new Date('2026-04-11T11:00:00');
     
     const timer = setInterval(() => {
       const now = new Date();

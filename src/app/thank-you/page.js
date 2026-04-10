@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 
 export default function ThankYouPage() {
   return (
@@ -13,15 +12,9 @@ export default function ThankYouPage() {
         </h1>
         <p className="hero-sub">
           <strong>Your seat is reserved!</strong> We've sent the Google Meet link and event details to your email and WhatsApp.<br /><br />
-          Mark your calendar for <strong>April 11th at 11:00 AM IST</strong>. 
+          Mark your calendar for <strong>April 12th at 11:00 AM IST</strong>. 
           In the meantime, join our community for exclusive resources.
         </p>
-        
-        <div className="hero-actions">
-          <Link href="/" className="btn-secondary">
-             ← Back to Homepage
-          </Link>
-        </div>
       </div>
 
       <div className="hero-right">
