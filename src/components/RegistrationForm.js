@@ -147,7 +147,11 @@ export default function RegistrationForm() {
             type="tel"
             name="phone"
             id="fieldPhone"
-            placeholder="+91 00000 00000"
+            placeholder="10-digit number"
+            pattern="[0-9]{10}"
+            minLength="10"
+            maxLength="10"
+            title="Please enter exactly 10 digits"
             required
           />
         </div>
