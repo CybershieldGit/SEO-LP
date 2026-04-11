@@ -23,6 +23,9 @@ const barlowCondensed = Barlow_Condensed({
 export const metadata = {
   title: "Rank #1 on Google — Free SEO Masterclass | IDS",
   description: "A 2-hour live masterclass where you'll learn Advanced SEO from scratch. Certification included.",
+  icons: {
+    icon: '/favicon-logo.svg',
+  },
 };
 
 export default function RootLayout({ children }) {
